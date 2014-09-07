@@ -5,14 +5,14 @@ services:
 env:
   - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=py27
   - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=py27-opt
-  - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=pypy
+  - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=pyp
 
 notifications:
      email:
          recipients:
-             - iamgrootbatman@gmail.com 
+             - vidya@shippable.com
              - chandrakanth@shippable.com
-         #on_success: always
+         on_success: always
          on_failure: always
 
 install:
