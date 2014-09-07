@@ -13,7 +13,7 @@ notifications:
              - vidya@shippable.com
              - chandrakanth@shippable.com
          on_success: always
-        # on_failure: always
+         on_failure: change
 
 install:
   - pip install tox
