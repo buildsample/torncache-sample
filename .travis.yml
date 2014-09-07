@@ -6,7 +6,15 @@ env:
   - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=py27
   - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=py27-opt
   - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=pypy
-  
+
+notifications:
+     email:
+         recipients:
+             - iamgrootbatman@gmail.com 
+             - chandrakanth@shippable.com
+         on_success: change
+         on_failure: always
+
 install:
   - pip install tox
 script:
