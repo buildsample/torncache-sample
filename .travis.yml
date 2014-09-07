@@ -3,11 +3,14 @@ python: 2.7
 services:
   - memcached
 env:
-  - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=py27
-  - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=py27-opt
-  - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=pypy
+  - global
+      - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=py27
+      - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=py27-opt
+      - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=pypy
+      - secure: J7cpwYIUwdcXEvXdWWjT8dkJ9VvSnMTxAfEtRo0+SiGHDqaHCsmWdf4sC3qbj4E/JbP/nztn42GAzYKjV2qgwbv2Ot3cLOW6ewwRwHh0bjxBxxtQvfrBMF9gCoIeMz7WowyoL1QhKWNFoxe2dUnsukaLtX1U7vRMZMVaEx4mk4pgkrYekC0vuMza5zx7hUcJ3+YYv3TW1zDBrEob4gq04Q0VLppwQKhjye9id8AHVOfO4n0c5lmD3NcaRuGsdnlGzh5tUeTeaFhe4jXtJbWFhlNkoP8Dqc12kYUvCM5h4bhiRAyuX90YtTV9XBDOW72GUyiEOtCGByO4VB0LY+tCwg==
   
 install:
   - pip install tox
 script:
   - tox -e $TOX_ENV
+  - echo $foo
