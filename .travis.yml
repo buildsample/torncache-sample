@@ -3,8 +3,6 @@ python: 2.7
 services:
   - memcached
 env:
-  global:
-    - secure: RQCLlV5H6Umbih9w6IMeq7/2FFBI5nJPTCChnljXaJGI8F/4XYG1Tjxgi0bkl1HTr46rlSamI9+p4dzr9m2jNetyI4PzvTrhuEu3sqThYyVdR4tt61Lc2Rehs8/0JaRfo7ThHOekLYEmxcHlKkLwDGBXTnzvWaZOVtmqD3pfN6SZKRGkfTQdP57PPwXTQMxNZ1xl1Jc6hrxLUyePCQ4w+DLXlfSc0Wkdz0i6tUzWQWVVlT2RhUlxLNaWHhkHZh9qNKYl/yA5JEfCh4yewUeV9CNNUpfGCGoqB3VgPFFtgLvrE9cxOZShazOMdUSchduo9jIEz9lMolMrTkOfrX32YA==
   - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=py27
   - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=py27-opt
   - MEMCACHED_URL=mc://localhost:11211 TOX_ENV=pypy
