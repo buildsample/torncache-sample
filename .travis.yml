@@ -13,7 +13,7 @@ notifications:
              - iamgrootbatman@gmail.com 
              - chandrakanth@shippable.com
          on_success: always
-         on_failure: always
+        # on_failure: always
 
 install:
   - pip install tox
