@@ -11,7 +11,7 @@ notifications:
      email:
          recipients:
              - vidya@shippable.com
-             - chandrakanth@shippable.com
+            # - chandrakanth@shippable.com
          on_success: always
          on_failure: change
 
